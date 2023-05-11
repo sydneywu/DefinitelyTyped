@@ -61,7 +61,7 @@ export interface EditorProps {
     ariaDescribedBy?: string | undefined;
     ariaExpanded?: string | undefined;
     ariaHasPopup?: string | undefined;
-    customBlockRenderFunc?(block: ContentBlock): any;
+    customBlockRenderFunc?(block: ContentBlock, config: any, getEditorState: any): any;
     wrapperId?: number | undefined;
     customDecorators?: object[] | undefined;
     editorRef?(ref: object): void;
